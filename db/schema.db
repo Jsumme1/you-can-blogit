@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS youblog_db;
+
+CREATE DATABASE youblog_db;
