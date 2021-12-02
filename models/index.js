@@ -1,7 +1,7 @@
 // import all models
 const Post = require("./Post");
 const User = require("./User");
-const Vote = require("./Vote");
+const Connector = require("./Connector");
 const Comment = require("./Comment");
 
 // create associations
@@ -15,35 +15,35 @@ Post.belongsTo(User, {
 });
 
 User.belongsToMany(Post, {
-  through: Vote,
-  as: "voted_posts",
+  through: Connector,
+  as: "connected_posts",
 
   foreignKey: "user_id",
   onDelete: "SET NULL",
 });
 
 Post.belongsToMany(User, {
-  through: Vote,
-  as: "voted_posts",
+  through: Connector,
+  as: "connected_posts",
   foreignKey: "post_id",
   onDelete: "SET NULL",
 });
 
-Vote.belongsTo(User, {
+Connector.belongsTo(User, {
   foreignKey: "user_id",
   onDelete: "SET NULL",
 });
 
-Vote.belongsTo(Post, {
+Connector.belongsTo(Post, {
   foreignKey: "post_id",
   onDelete: "SET NULL",
 });
 
-User.hasMany(Vote, {
+User.hasMany(Connector, {
   foreignKey: "user_id",
 });
 
-Post.hasMany(Vote, {
+Post.hasMany(Connector, {
   foreignKey: "post_id",
 });
 
@@ -66,4 +66,4 @@ Post.hasMany(Comment, {
   foreignKey: "post_id",
 });
 
-module.exports = { User, Post, Vote, Comment };
+module.exports = { User, Post, Connector, Comment };
