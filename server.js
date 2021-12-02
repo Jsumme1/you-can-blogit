@@ -13,7 +13,7 @@ const sess = {
   secret: "Super secret secret",
   cookie: {
     // session expires after 5 min
-      expires: 30000
+      expires: 300000
   },
   resave: false,
   saveUninitialized: true,

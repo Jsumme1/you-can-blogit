@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { Post, User, Comment} = require("../../models");
 const withAuth = require("../../utils/auth");
 
-// get all users
+// get all posts
 router.get("/", (req, res) => {
   console.log("======================");
   Post.findAll({
@@ -91,6 +91,7 @@ router.put("/:id", withAuth, (req, res) => {
   Post.update(
     {
       title: req.body.title,
+      post_url: req.body.post_url
     },
     {
       where: {
