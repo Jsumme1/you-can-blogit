@@ -10,8 +10,8 @@
 </head>
 
 <body>
- 
-     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+   <div class="wrapper">
+     <nav class="navbar navbar-light" style="background-color: #ddd8fa;">
        <div class="container-fluid">
            <span class="navbar-brand">You Can Blog It!</span>
             
@@ -35,13 +35,13 @@
  
         </nav>
     <main>
-       <div class="wrapper">
+     
       {{{ body }}}
     </main>
     <footer>
       Thanks for visiting!
     </footer>
-  </div>
+      </div>
   
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
