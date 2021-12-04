@@ -57,9 +57,9 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
 ## Images 
-![Home Page](https://github.com/Jsumme1/barge-nomination/blob/main/public/assets/HomePage.JPG)
-![Dashboard](https://github.com/Jsumme1/barge-nomination/blob/main/public/assets/NomCreate.JPG)
-![Edit Post](https://github.com/Jsumme1/barge-nomination/blob/main/public/assets/SingleNom.JPG)
+![Home Page](https://github.com/Jsumme1/you-can-blogit/blob/main/public/assets/HomePage.JPG)
+![Dashboard](https://github.com/Jsumme1/you-can-blogit/blob/main/public/assets/Dashboard.JPG)
+![Edit Post](https://github.com/Jsumme1/you-can-blogit/blob/main/public/assets/Edit.JPG)
 
 
 ## Contributions
