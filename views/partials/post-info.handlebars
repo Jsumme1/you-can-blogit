@@ -1,8 +1,10 @@
 <article class="post">
   <div class="title">
     <a href="/post/{{id}}" >{{title}}</a>
+    <div class="blogpost">
+    <span> {{post_text}} </span>
+    </div>
   </div>
- {{#if single}} <div>{{post_text}} </div>   {{/if}}
   <div class="meta">
   Created By {{user.username}} on {{format_date created_at}} 
   </div>
