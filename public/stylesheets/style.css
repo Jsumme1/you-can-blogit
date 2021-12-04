@@ -108,12 +108,16 @@ main {
   background-color: #ff643d;
 }
 
+.back {
+  font-size: 150%;
+  margin-bottom: 10%;
+}
 .post {
   margin-bottom: 2%;
   line-height: 150%;
 }
 
-.post .title span {
+.post.title span {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
@@ -157,4 +161,5 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+  background-color: #ddd8fa;
 }
