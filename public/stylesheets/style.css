@@ -37,9 +37,16 @@ button:hover {
   background-color: #3486eb;
 }
 
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+}
+
 .post-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 textarea, input {
@@ -115,6 +122,7 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+
 }
 
 .post.title span {
@@ -173,4 +181,6 @@ footer {
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
+  overflow: hidden;
+  overflow-y: auto;
 }
